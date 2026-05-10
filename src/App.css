@@ -1,3 +1,13 @@
+body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
 .titulo{
   font-family: 'Bebas Neue', sans-serif;
   color: var(--letra_arriba);
@@ -20,8 +30,15 @@
 
 .catalogo{
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+
+  gap: 25px;
+
+  max-width: 1200px;
+
+  margin: auto;
+  
   padding: 20px;
 }
 
@@ -219,6 +236,20 @@
 .cuadro_verificacion{
   position: relative;
 }
+
+.product-card{
+  width: 100%;
+  max-width: 260px;
+  margin: auto;
+}
+
+.product-card img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
 
 
 
