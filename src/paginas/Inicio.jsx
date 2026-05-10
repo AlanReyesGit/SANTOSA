@@ -15,7 +15,6 @@ import { CartContext } from "../contexto/ContextoCarro";
 
 function Home() {
 
-{/*const [count, setCount] = useState(0)*/}
 const [cartOpen, setCartOpen] = useState(false);
 const { cart } = useContext(CartContext);
 const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
@@ -23,10 +22,7 @@ const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
   return (      
     <>
       <section id="center" className="center">
-        <div className="hero">
-          {/*<img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />*/}
+        <div>
           <img src={santosa_logo} className="santosa" alt="Santosa logo" />
         </div>
         <div>
@@ -35,16 +31,6 @@ const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
             Ropa que acompaña a tu movimiento, clases que equilibran tu energía 🧘🏻‍♀️💖
           </p>
         </div>
-
-        {/* 
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-        */}
       </section>
       
     
