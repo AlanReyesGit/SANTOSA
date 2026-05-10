@@ -123,8 +123,8 @@ function Checkout({ onClose, closeCart }) {
 
 
     Swal.fire({
-      title: 'Compra enviada',
-      text: 'Su pedido fue registrado',
+      title: 'Santosa agradece tu compra🙏',
+      html: 'Su pedido fue registrado con éxito. <br><br> Nos comunicaremos contigo lo antes posible😊',
       icon: 'success',
       confirmButtonText: 'OK'
     }).then(() => {
