@@ -68,7 +68,7 @@ function ProductCard({ product }) {
   };
 
   return (
-    <div style={{ border: "1px solid #ccc", padding: 10 }}>
+    <div className="product-card" style={{ border: "1px solid #ccc", padding: 10 }}>
 
       <button onClick={prevImage}>◀</button>
 
